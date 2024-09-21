@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    
+    div.post1 {
+   padding: 15px;
+}
+
+div.postcolor {
+   padding: 0;
+}
+
+.mobile-post div.postcolor div:first-child {
+   width: auto;
+   max-width: 480px;
+}
+
+.prismatic {
+   margin: 30px auto;
+   width: max-content;
+   max-width: 650px;
+   text-align: right;
+   position: relative;
+   --seriftype: 'Playfair Display', serif;
+   --bgcolor: #fafafa;
+   --outerborder: white;
+   --accent1: rgb(52 95 189);
+   --accent1rgb: 52, 95, 189;
+   --bannerimg: url(prismatic-bg.png);
+}
+
+.prismatic a.credits {
+   font: 700 7px/10px 'Roboto', sans-serif;
+   letter-spacing: .8px;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+.prismatic-border {
+   padding: 8px;
+   background: var(--outerborder);
+   box-shadow: 0px 0px 40px rgb(0, 0, 0, 0.1);
+   color: #333;
+   text-align: left;
+   font: 400 13px/1.4em 'Assistant', sans-serif;
+}
+
+.prismatic-inner {
+   display: grid;
+   grid-template-columns: 150px 500px;
+}
+
+.prismcol-img {
+   background: var(--bgcolor);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   overflow: hidden;
+}
+
+.prism-imgbox {
+   width: 100px;
+   height: 500px;
+   background: var(--tallimg) center center / cover;
+   filter: saturate(1.75) contrast(.8) brightness(1.05);
+   opacity: .9;
+   z-index: 20;
+}
+
+.prismcol-body {
+   background: var(--bgcolor);
+   padding: 40px 45px 20px;
+   padding-right: 25px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.prism-textbox {
+   padding-right: 20px;
+}
+
+.prism-vertimg .prism-textbox {
+   max-height: auto;
+   overflow: auto;
+}
+
+.prismatic br+br {
+   content: '';
+   display: block;
+   height: .85em;
+}
+
+.prismatic i {
+   opacity: .75;
+}
+
+.prismatic b {
+   color: var(--accent1);
+   opacity: 1;
+}
+
+.prism-meta {
+   display: flex;
+   align-items: center;
+   margin-top: 1.25em;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.prism-notes {
+   font: 12px/1.4em 'Assistant';
+   letter-spacing: .3px;
+   flex-basis: 50%;
+   flex-grow: 1;
+   display:block;
+}
+
+.prism-notes::before {
+   content: 'notes | ';
+   text-transform: uppercase;
+   font: bold 10px var(--seriftype);
+   letter-spacing: 1px;
+   color: var(--accent1);
+}
+
+.prism-words {
+   font: 12px/1.4em 'Assistant';
+   letter-spacing: .3px;
+   flex-basis: 50%;
+   flex-grow: 1;
+   display:block;
+}
+
+.prism-words::before {
+   content: 'words | ';
+   text-transform: uppercase;
+   font: bold 10px var(--seriftype);
+   letter-spacing: 1px;
+   color: var(--accent1);
+}
+
+.prism-tags {
+   display: inline-flex;
+   flex-wrap: nowrap;
+   max-width: calc(100% - 20px);
+   padding: 8px 0;
+   overflow-x: auto;
+   cursor: pointer;
+}
+
+.prism-tags a {
+   display: flex;
+   align-items: center;
+   margin-right: 8px;
+   background: rgb(var(--accent1rgb), .02);
+   padding: 0 16px;
+   height: 40px;
+   text-transform: uppercase;
+   font: bold 10px var(--seriftype);
+   letter-spacing: 1px;
+   color: inherit;
+   text-decoration: none;
+   column-gap: 8px;
+}
+
+.prism-tags a:last-child {
+   margin-right: 0;
+}
+
+.prism-bquote .prismatic-inner {
+   grid-template-columns: 195px 385px;
+}
+
+.prismcol-quote {
+   background: var(--bgcolor);
+   padding: 41px 2px 0 25px;
+   font: bold italic 21px/1.2em var(--seriftype);
+   color: rgb(var(--accent1rgb), .5);
+   text-align: right;
+}
+
+.prismcol-quote+.prismcol-body {
+   padding-left: 25px;
+}
+
+.prismh2::before {
+   content: '\201C';
+   display: block;
+   width: 0;
+   margin-top: -10px;
+   margin-left: -16px;
+   overflow: visible;
+   float: left;
+   font-size: 64px;
+   line-height: 1em;
+   opacity: .25;
+   color: #888;
+}
+
+.prism-one.prismatic-border {
+   padding: 4px;
+}
+
+.prism-one .prismatic-inner {
+   display: block;
+   max-width: 450px;
+}
+
+.prism-oneheader {
+   position: relative;
+   background: var(--bgcolor);
+   padding: 25px 35px;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.prism-oneheader span {
+   font: bold 11px/1.5em var(--seriftype);
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   z-index: 50;
+   /* color: rgba(0, 0, 0, 1);
+   color: rgb(var(--accent1rgb), .5); */
+   /* color: rgba(255, 255, 255, .15); */
+   color: rgb(0, 0, 0, .15);
+   text-shadow: 0px 0px 1px rgba(var(--accent1rgb), .5);
+   /* text-shadow: 0px 0px 1px rgba(255, 255, 255, .15); */
+   /* mix-blend-mode: exclusion; */
+}
+
+.prism-oneheader.prism-imgbg::after {
+   --tallimg: var(--bannerimg);
+   opacity: .2;
+   filter: saturate(1.5) blur(2px) brightness(1.1);
+}
+
+.prism-oneheader.prism-imgbg::before {
+   /* background: linear-gradient(to right, rgb(var(--accent1rgb), 1), rgb(var(--accent1rgb), .5)); */
+   opacity: .25;
+}
+
+.prism-onebody {
+   background: var(--bgcolor);
+   padding: 40px 45px 20px;
+}
+
+.prism-onebody:not(:first-child) {
+   padding-top: 30px;
+}
+
+.prismatic img {
+   object-fit: cover;
+   width: 90px;
+   height: 90px;
+   filter: saturate(1.75) contrast(.9) brightness(1.05);
+   opacity: .85;
+   float: left;
+   margin: 5px 14px 5px 0;
+}
+
+.prismatic ::-webkit-scrollbar {
+   width: 3px !important;
+   height: 1px !important;
+   background: rgb(var(--accent1rgb), 0);
+   border: 0;
+}
+
+.prismatic ::-webkit-scrollbar-thumb {
+   background: rgb(var(--accent1rgb), .1);
+   border: 0;
+}
+
+.prismatic ::-webkit-scrollbar-track,
+.prismatic ::-webkit-scrollbar-track-piece {
+   background: var(--bgcolor);
+   border: 0;
+}
