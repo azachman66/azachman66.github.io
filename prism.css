@@ -45,7 +45,7 @@ div.postcolor {
 
 .prismatic-inner {
    display: grid;
-   grid-template-columns: 150px 500px;
+   grid-template-columns: 100px 500px;
 }
 
 .prismcol-img {
