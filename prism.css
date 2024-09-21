@@ -68,7 +68,7 @@ div.postcolor {
 
 .prismcol-body {
    background: var(--bgcolor);
-   padding: 40px 45px 10px;
+   padding: 40px 20px 10px;
    padding-right: 25px;
    display: flex;
    flex-direction: column;
